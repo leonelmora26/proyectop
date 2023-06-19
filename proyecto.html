@@ -23,13 +23,11 @@
                     <img src="foto.jpg" width="400" height="300">
                 </div>
                     <div class="texto">
-                    <div class="presen">
                         <p class="soy">¿Quien soy?</p>
-                    </div>
                     <p class="boton">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Esse nisi adipisci prodivent eius enim id eos fugit odit facere vitae. Sit  sequi praesentium, officiisrerum dicta. Deseraunt ipsam officia neque!</p>
                         <button class="mas">Leér más</button>
                 </div>
-                
+
             </div>
 
             <div class="parte3">
@@ -98,6 +96,22 @@
 
                  
     }
+    @media (max-width: 820px) {
+            .parte2 {
+                grid-template-columns: 100%; 
+                justify-content: start;/* Cambia la estructura de las columnas para ocupar el 100% del ancho */
+            }
+
+            .imagen {
+                padding-left: 0; /* Elimina el espacio izquierdo para ajustar la imagen al ancho completo */
+                margin-bottom: 10px; /* Agrega margen inferior para separar la imagen del contenido de abajo */
+            }
+
+            .texto {
+                margin-top: 0; /* Elimina el espacio superior para ajustar el texto al ancho completo */
+                margin-bottom: 90%;
+            }
+        }
   .nombre{
         padding: 0px;
         margin: 10px;
@@ -128,48 +142,38 @@
             width: 100%;
             margin-top: 0;
             margin-left: 0;
-            display: flex;
+            display: grid;
             grid-template-columns: 50% 50%;
-            display: grid;  
+            
+
         }
         .imagen{
             margin: 0px;
-            padding-left:120px;
             margin-top: 100px;
         }
         .texto{
+            margin-top: 10%;
             border: 0px;
-            margin: 0px;
-            font-size: 5ch;
+            font-size: 8ch;
             color: rgb(255, 72, 0);
-            padding-top: 100px;
-            grid-column: 2/3;
-            display: flex;
-            flex-direction: column;
-            padding-right: 30%;
         }
+    
         .soy{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin: 0px;
-            margin-top: 15%;
+            margin: 0%;
             width: 100%;
-            
-        
         }
         .boton{
-            grid-column: 2/2;
             color: black;
-            font-size: 50%;
-            margin-bottom: 50px;
+            font-size: 30%;
+
             margin: 0px;
         }
         .mas{
-            grid-column: 2/2;
-            margin: 0px;
-            width: 20%;
+            justify-content: center;
+            width: 26%;
             background-color: rgb(252, 76, 7);;
             border: 0px;
-            margin-top: 20px;
             padding: 5px;
         }
         .parte3{
@@ -178,11 +182,15 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            margin: 0px;
             align-items: center;
+            margin-top: 0%;
         }
-            .avatar{
-            
+        @media (max-width:800){
+            .parte3{
+                margin-top: 40%;
+            }
+        }
+                .avatar{
             margin: 0px;
             width: 20%;
             padding-bottom: 0px;
@@ -204,14 +212,29 @@
             }
             .parte4{
                 background-color: white;
-                height: 600px;
+                height: 400px;
                 width: 90%;
                 display: grid;
                 margin: 2px;
                 grid-template-columns: 25% 25% 25% 25%;
+                justify-content: center;
+                justify-items: center;
                
                 
             }
+            @media (max-width: 1110px) { 
+                .parte4{
+                grid-template-columns: 50% 50%;
+                }
+                
+            }
+            @media (max-width: 820px) { 
+                .parte4{
+                grid-template-columns: 50%;
+                }
+                
+            }
+            
             .miproyecto{
                 width: 100%;
                 font-size: 50px;
@@ -248,11 +271,33 @@
             .barrafinal{
                 background-color: black;
                 width: 100%;
+                position: absolute;
+            }
+            @media (max-width: 1110px) { 
+                .barrafinal{
+                   margin-top: 30%;
+        
+                }
+                
+            }
+            @media (max-width: 1080px) { 
+                .barrafinal{
+                margin-top: 40%;
+                }
+                
+            }
+            @media (max-width: 820px) { 
+                .barrafinal{
+                   margin-top: 135%;
+        
+                }
+                
             }
             .copy{
                 color: white;
                 text-align: right;
             }
+        
             .proyecto1, .proyecto2, .proyecto3,.proyecto4{
                text-align: center;
             }
