@@ -74,19 +74,32 @@
         justify-items: center;
         margin: 0%;
       }
-      .container{
+      .container {
         height: 100vh;
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        background-color: rgb(45, 193, 230);
-      }
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(45, 193, 230);
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 471px) {
+  .container {
+    grid-template-columns: 100%;
+  }
+}
+
       button {
         height: 70%;
         width: 60%;
         margin: 0%;
+        padding: 0%;
       }
       .superior{
         width: 100%;
